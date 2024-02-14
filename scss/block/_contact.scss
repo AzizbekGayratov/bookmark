@@ -1,0 +1,121 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $blue;
+}
+
+.contact__block {
+    text-align: center;
+}
+
+.contact__cap {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 4.62px;
+}
+
+.contact__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.08px;
+    margin-bottom: 32px;
+}
+
+.contact__input {
+    outline: none;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 2px solid #fff;
+    max-width: 100%;
+    padding: 16px 20px;
+
+    &:active {
+        border: 2px solid $pink;
+    }
+}
+
+.contact__input::placeholder {
+    color: #242a4540;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+.contact__btn {
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px -4px #495dcf33;
+    background: $pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    border: 2px solid $pink;
+    cursor: pointer;
+
+    &:hover {
+        &:hover {
+            color: $pink;
+            box-sizing: border-box;
+            border: 2px solid $pink;
+            border-radius: 5px;
+            background: #ffffff;
+        }
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+@media screen and (min-width:500px) {
+    .contact {
+        padding-top: 58px;
+        padding-bottom: 74px;
+    }
+
+    .contact__title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.1px;
+    }
+
+    .contact__content {
+        max-width: 445px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact__cap {
+        margin-bottom: 24px;
+    }
+
+    .contact__title {
+        margin-bottom: 36px;
+    }
+
+    .contact__form {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .contact__input {
+        max-width: 300px;
+        padding-right: 88px;
+    }
+
+    .contact__btn {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

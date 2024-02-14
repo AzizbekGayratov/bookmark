@@ -1,0 +1,124 @@
+.feature {
+    padding-top: 140px;
+    padding-bottom: 72px;
+
+    &__block {
+        text-align: center;
+    }
+}
+
+.feature__title {
+    color: $dark-blue;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.08px;
+}
+
+.feature__text {
+    color: #9194A2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.feature__content {
+    margin-bottom: 40px;
+}
+
+.feature__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #495dcf33;
+    border-left: none;
+    border-right: none;
+}
+
+.feature__nav_link {
+    color: #9194A2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.53px;
+    padding-bottom: 16px;
+
+    &:hover {
+        color: $dark-blue;
+        border-bottom: 4px solid $pink;
+    }
+}
+
+.feature__item:first-child {
+    .feature__nav_link {
+        color: $dark-blue;
+        border-bottom: 4px solid $pink;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .feature {
+        padding-top: 80px;
+    }
+
+    .feature__block {
+        padding-left: 190px;
+        padding-right: 190px;
+    }
+
+    .feature__content {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature__title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 52px;
+        letter-spacing: -0.1px;
+        margin-bottom: 16px;
+    }
+
+    .feature__content {
+        margin-bottom: 72px;
+    }
+
+    .feature__item {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .feature__list {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #9194A2;
+    }
+
+    .feature__item:first-child {
+        .feature__nav_link {
+            color: #9194A2;
+            border-bottom: none;
+
+            &:hover {
+                color: $dark-blue;
+                border-bottom: 4px solid $pink;
+            }
+        }
+    }
+
+    .feature__nav_link {
+        display: inline-block;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 27px;
+        border-bottom: 4px solid #fff;
+
+        &:hover {
+            color: $dark-blue;
+            border-bottom: 4px solid $pink;
+        }
+    }
+}

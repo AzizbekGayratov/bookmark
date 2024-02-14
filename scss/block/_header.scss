@@ -1,0 +1,59 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.header__list {
+    display: none;
+}
+
+.header__link {
+    color: $dark-blue;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+}
+
+.header__menu {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-image: url('/img/menu.svg');
+}
+
+.header__btn {
+    @include btn (12px 32px 11px 32px)
+}
+
+.header__link {
+    color: $dark-blue;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+
+    &:hover {
+        color: $pink;
+    }
+}
+
+.header__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:900px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__list {
+        display:flex;
+        align-items: center;
+        gap: 48px;
+    }
+}
